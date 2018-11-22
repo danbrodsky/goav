@@ -10,5 +10,5 @@ func (cp *CodecParameters) CodecId() CodecId {
 }
 
 func (cp *CodecParameters) SetCodecTag(tag uint) {
-	cp.codec_tag = C.uint(tag)
+	cp.codec_tag = C.uint32_t(tag)
 }
